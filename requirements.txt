@@ -9,7 +9,6 @@ marshmallow-enum==1.5.1
 mypy-extensions==0.4.3
 paho-mqtt==1.5.0
 playsound==1.2.2
-PyAudio @ file:///C:/Users/legra/Desktop/Code/PythonProjects/Jarvis/PyAudio-0.2.11-cp39-cp39-win_amd64.whl
 pypiwin32==223
 pyttsx3==2.90
 pywin32==300
