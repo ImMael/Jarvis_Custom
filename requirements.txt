@@ -9,6 +9,7 @@ marshmallow-enum==1.5.1
 mypy-extensions==0.4.3
 paho-mqtt==1.5.0
 playsound==1.2.2
+PyAudio @ file:///C:/Users/billy/Desktop/Projets/Projet-Labday/Jarvis_Custom/PyAudio-0.2.11-cp39-cp39-win_amd64.whl
 pypiwin32==223
 pyttsx3==2.90
 pywin32==300
@@ -20,4 +21,3 @@ stringcase==1.2.0
 typing-extensions==3.7.4.3
 typing-inspect==0.6.0
 urllib3==1.26.2
-webrtcvad==2.0.10
