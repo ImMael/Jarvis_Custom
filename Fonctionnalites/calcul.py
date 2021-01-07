@@ -7,11 +7,7 @@ def calculate(question):
             question = question.replace("x", "*")
         num = ""
         for i in range(len(question)):
-            if ('A' <= question[i] <= 'Z') or ('a' <= question[i] <= 'z'):
-                pass
-            elif question[i].isdigit():
-                num = num + question[i]
-            elif '0' >= question[i] <= '9':
+            if (question[i].isdigit()) or ("*" == question[i]) or ("/" == question[i]) or ("-" == question[i]) or ("+" == question[i]):
                 num = num + question[i]
             else:
                 pass

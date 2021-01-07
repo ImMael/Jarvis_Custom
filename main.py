@@ -12,4 +12,3 @@ while True:
                 repondre()
         except TypeError:
             pass
-

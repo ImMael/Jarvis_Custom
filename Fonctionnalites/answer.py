@@ -22,7 +22,7 @@ def repondre():
         speak(repeatable)
     elif "météo" in question:
         whatWeather( getCity(question) )
-    elif ("x" in question) or ("/" in question) or ("-" in question) or ("*" in question):
+    elif ("x" in question) or ("/" in question) or ("-" in question) or ("+" in question):
         calculate(question)
     else:
         playsound('arouf-gangsta-begaye.wav')
