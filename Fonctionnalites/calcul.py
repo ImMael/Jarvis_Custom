@@ -1,7 +1,7 @@
 from Fonctionnalites.speak import speak
 
 
-def Calculate(question):
+def calculate(question):
     try:
         if "x" in question:
             question = question.replace("x", "*")

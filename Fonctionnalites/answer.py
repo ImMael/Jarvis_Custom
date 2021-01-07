@@ -4,7 +4,7 @@ from Fonctionnalites.speak import speak
 from Fonctionnalites.whatDayToday import whatDayToday
 from Fonctionnalites.whatTimeIsIt import whatTimeIsIt
 from Fonctionnalites.whatWeather import whatWeather
-from Fonctionnalites.Calcul import Calculate
+from Fonctionnalites.calcul import Calculate
 
 
 def repondre():
