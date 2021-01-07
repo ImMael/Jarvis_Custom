@@ -3,7 +3,7 @@ from Fonctionnalites.listen import ecouter
 from Fonctionnalites.speak import speak
 from Fonctionnalites.whatDayToday import whatDayToday
 from Fonctionnalites.whatTimeIsIt import whatTimeIsIt
-from Fonctionnalites.whatWeather import whatWeather
+from Fonctionnalites.whatWeather import whatWeather, getCity
 
 
 def repondre():
@@ -20,6 +20,6 @@ def repondre():
         repeatable = question.split("répète après moi")
         speak(repeatable)
     elif "météo" in question:
-        whatWeather()
+        whatWeather( getCity(question) )
     else:
         playsound('arouf-gangsta-begaye.wav')
