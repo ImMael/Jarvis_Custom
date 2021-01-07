@@ -4,7 +4,7 @@ from Fonctionnalites.speak import speak
 from Fonctionnalites.whatDayToday import whatDayToday
 from Fonctionnalites.whatTimeIsIt import whatTimeIsIt
 from Fonctionnalites.whatWeather import whatWeather
-from Fonctionnalites.calcul import Calculate
+from Fonctionnalites.calcul import calculate
 
 
 def repondre():
@@ -22,7 +22,7 @@ def repondre():
         speak(repeatable)
     elif "météo" in question:
         whatWeather()
-    elif ("x" in question) or ("/" in question) or ("-" in question) or ("*" in question):
-        Calculate(question)
+    elif ("x" in question) or ("/" in question) or ("-" in question) or ("+" in question):
+        calculate(question)
     else:
         playsound('arouf-gangsta-begaye.wav')
