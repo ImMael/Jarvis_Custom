@@ -25,9 +25,12 @@ def repondre():
         whatWeather( getCity(question) )
     elif ("x" in question) or ("/" in question) or ("-" in question) or ("+" in question):
         calculate(question)
-    elif ("cas" in question) and ("covid" in question):
+    elif ("cas" in question) and (("covid" in question) or ("covit" in question)):
         country = question.split("en ")
-        covcases(country[2],"cas")
+        covcases(country[2], "cas")
+    elif ("mort" in question) and (("covit" in question) or ("covid" in question)):
+        country = question.split("en ")
+        covcases(country[2], "morts")
     else:
         playsound('arouf-gangsta-begaye.wav')
 
