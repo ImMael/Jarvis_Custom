@@ -4,7 +4,8 @@ from Fonctionnalites.speak import speak
 from pprint import pprint
 
 
-def whatWeather(city):
+def whatWeather(question):
+    city = getCity(question)
     r = requests.get(f'http://api.openweathermap.org/data/2.5/weather?q={city}&lang=fr&units=metric&APPID=36a7954299258aa25bd9ba8ceb3ab077')
     # pprint(r.json())
     reponse = json.loads(r.text)
@@ -25,18 +26,18 @@ def whatWeather(city):
 
 def getCity(question):
     city = ""
-    split = question.split("à")
+    split = question.split("à ")
     split = split[1].split(" ")
 
     for i in range(len(split)):
-        if split[i] == '':
-            continue
-        if split[0] == split[0].upper():
+        if split[0][0] == split[0][0].upper():
             city += split[i]
-            if split[i + 1]:
+            try:
                 next = split[i + 1]
-                if next[0] == next[0].upper():
+                if next[0][0] == next[0][0].upper():
                     city += "+"
                 else:
                     break
+            except IndexError:
+                break
     return city
