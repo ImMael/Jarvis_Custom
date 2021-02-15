@@ -12,7 +12,11 @@ def calculate(question):
             else:
                 pass
             print(num)
-        result = eval(num)
+
+        result = round(eval(num), 2)
+        if str(result).endswith(".0"):
+            result = int(result)
+
         speak(f'Le résultat est : {str(result)}')
         print(f'question : {question}')
         print(f'num : {num}')
