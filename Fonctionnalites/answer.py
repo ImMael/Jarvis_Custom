@@ -16,7 +16,9 @@ def repondre():
     # question = "quel jour sommes nous"
     # question = "répète après moi bonjour tout le monde"
     # question = "quel est la météo à Paris stp"
-    question = "résultat du calcul 100*5/5.5"
+    # question = "résultat du calcul 100*5/5.5"
+    question = "quels sont les résultat du covid en espagne stp"
+    # question = "traduis comment allez vous en anglais"
 
     # if "Bonjour" in question:
     #     speak('Bonjour, comment allez vous ?')
@@ -62,4 +64,5 @@ def repondre():
                 print(e)
                 pass
     if waitingReponse:
-        playsound('arouf-gangsta-begaye.wav')
+        # playsound('arouf-gangsta-begaye.wav')
+        print("CA NE MARCHE PAS")
