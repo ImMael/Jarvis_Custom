@@ -13,5 +13,7 @@ def getVariations():
         'répète après moi': repeat,
         'météo': whatWeather,
         'calcul': calculate,
+        'covit': cov
+        'covid':
     }
     return variations
