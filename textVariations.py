@@ -5,18 +5,22 @@ from Fonctionnalites.speak import repeat, hello
 from Fonctionnalites.disease import  covcases
 from Fonctionnalites.translate import speak_translate
 
+# Liste de toutes les variations possible de demandes utilisateur
+variations = {
+    'Bonjour': hello,
+    'quelle heure': whatTimeIsIt,
+    'quel jour': whatDayToday,
+    'répète après moi': repeat,
+    'météo': whatWeather,
+    'calcul': calculate,
+    'covit': covcases,
+    'covid': covcases,
+    'traduis ': speak_translate,
+}
 
 def getVariations():
-
-    variations = {
-        'Bonjour': hello,
-        'quelle heure': whatTimeIsIt,
-        'quel jour': whatDayToday,
-        'répète après moi': repeat,
-        'météo': whatWeather,
-        'calcul': calculate,
-        'covit': covcases,
-        'covid':covcases,
-        'traduis ': speak_translate,
-    }
+    """
+    Récupère la totalité des variations de demandes utilisateur
+    :return: un dictionnaire avec toutes les variations possible
+    """
     return variations

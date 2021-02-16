@@ -1,35 +1,35 @@
 from covid import Covid
 from Fonctionnalites.speak import speak
-from Fonctionnalites.translate import translate
 
 def covcases(question):
+    """
+    Permet d'annoncer les statistiques du covid dans un pays
+    :param question: demande de l'utilisateur
+    """
     covid = Covid()
     country = getCountry(question)
-    countryConvert = getCountryConvert(str.capitalize(country))[str.capitalize(country)]
+    countryConvert = getCountryConvert(country)
 
     result = covid.get_status_by_country_name(countryConvert)
     speak(f'Il y a {result["confirmed"]} cas, et {result["deaths"]} morts dû au covide en {country}')
 
 
 def getCountry(question):
+    """
+    Permet de récupérer le pays demandé par l'utilisateur
+    :param question: la demande de l'utilisateur
+    :return: le pays
+    """
     split = question.split("en ")
     country = split[1].split(" ")[0]
-
-    # for i in range(len(split)):
-    #     if split[0][0] == split[0][0].upper():
-    #         country += split[i]
-    #         print(country)
-            # try:
-            #     next = split[i + 1]
-            #     if next[0][0] == next[0][0].upper():
-            #         country += "+"
-            #     else:
-            #         break
-            # except IndexError:
-            #     break
     return country
 
 def getCountryConvert(country):
+    """
+    Récupère la ville demandé par l'utilisateur et la convertis pour récupérer l'alias utile à la requete
+    :param country: ville demandé par l'utilisateur
+    :return: l'alias du pays
+    """
     countries = {
         "états-unis": "US",
         "Inde": "India",
@@ -223,4 +223,4 @@ def getCountryConvert(country):
         "Vanuatu": "Vanuatu",
     }
 
-    return countries
+    return countries[str.capitalize(country)]

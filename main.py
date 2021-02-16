@@ -17,3 +17,6 @@ from Fonctionnalites.speak import speak
 # NE PAS SUPPRIMER => SERT A TESTER SANS PARLER
 repondre()
 exit()
+
+# API GOOGLE SEARCH
+#  AIzaSyBoi24dsIdsQ_j-qDVDSd2RVF2-EPRPwYk
