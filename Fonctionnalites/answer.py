@@ -12,30 +12,24 @@ from textVariations import getVariations
 
 
 def repondre():
-<<<<<<< HEAD
-    question = ecouter()
-=======
     """
     Permet de répondre à une demande de l'utilisateur parmis pluiseurs variations de demandes possible
     """
     # question = ecouter()
->>>>>>> a40ac2639d4120eb0fab5a37e68f3382af507dfc
 
     # question = "Bonjour"
     # question = "quelle heure est il"
     # question = "quel jour sommes nous"
     # question = "répète après moi bonjour tout le monde"
     # question = "quel est la météo à Paris stp"
-<<<<<<< HEAD
-    # question = "résultat du calcul 100*5/5.5"
-    # question = "rappelle moi le 15 février 2021 à 15 heures"
-    # question = "traduis comment allez vous en anglais"
-=======
     # question = "résultat du calcul 100*5/7"
     # question = "quels sont les résultat du covid en france stp"
-    question = "traduis comment allez vous en anglais"
-    # question = "quels sont les magasins ouvert à proximité"
->>>>>>> a40ac2639d4120eb0fab5a37e68f3382af507dfc
+    # question = "traduis comment allez vous en anglais"
+    # question = "rappelle moi le 15 février 2021 à 15 heures"
+    # question = "ajoute à la liste de course des yaourts au chocolat"
+    # question = "supprime de la liste de course des yaourts au chocolat"
+    question = "peut-tu vider la liste de course stp"
+    # question = "quel est le temps du trajet de Poissy à Paris"
 
     variations = getVariations()
 
