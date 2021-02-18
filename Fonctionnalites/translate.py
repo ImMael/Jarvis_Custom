@@ -1,6 +1,7 @@
 from textblob import TextBlob
 from Fonctionnalites.speak import speak
 
+
 def translate(phrase):
     lang_f = {"francais": "fr",
               "anglais": "en",
@@ -23,6 +24,7 @@ def translate(phrase):
     print(f'La traduction de {result["language"][0]} en {result["language"][1]} donne {result["traduction"]}')
 
     return result
+
 
 def speak_translate(phrase):
     result = translate(phrase)

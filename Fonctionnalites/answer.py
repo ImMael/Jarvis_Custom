@@ -12,7 +12,7 @@ from textVariations import getVariations
 
 
 def repondre():
-    # question = ecouter()
+    question = ecouter()
 
     # question = "Bonjour"
     # question = "quelle heure est il"
@@ -20,7 +20,7 @@ def repondre():
     # question = "répète après moi bonjour tout le monde"
     # question = "quel est la météo à Paris stp"
     # question = "résultat du calcul 100*5/5.5"
-    question = "quels sont les résultat du covid en france stp"
+    # question = "rappelle moi le 15 février 2021 à 15 heures"
     # question = "traduis comment allez vous en anglais"
 
     variations = getVariations()
