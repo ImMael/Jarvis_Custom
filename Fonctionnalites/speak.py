@@ -19,7 +19,7 @@ def repeat(question):
     :param question: String contenant la phrase donné par l'utilisateur
     """
     repeatable = question.split("répète après moi")
-    speak(repeatable)
+    speak(repeatable[1])
 
 def hello():
     """
