@@ -20,7 +20,6 @@ variations = {
 }
 
 def getVariations():
-<<<<<<< HEAD
 
     variations = {
         'Bonjour': hello,
@@ -34,10 +33,9 @@ def getVariations():
         'traduis ': speak_translate,
         'rappelle-moi': memo,
     }
-=======
+
     """
     Récupère la totalité des variations de demandes utilisateur
     :return: un dictionnaire avec toutes les variations possible
     """
->>>>>>> a40ac2639d4120eb0fab5a37e68f3382af507dfc
     return variations

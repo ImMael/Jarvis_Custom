@@ -12,20 +12,17 @@ while True:
     if appel != None:
         try:
             if "Jarvis" in appel:
-                playsound("soundnotif.wav")
+                # playsound("soundnotif.wav")
+                speak("Oui mon reuf")
                 repondre()
         except TypeError:
             pass
 
 
 # NE PAS SUPPRIMER => SERT A TESTER SANS PARLER
-<<<<<<< HEAD
+
 #repondre()
 #exit()
-=======
-repondre()
-exit()
 
 # API GOOGLE SEARCH
 #  AIzaSyBoi24dsIdsQ_j-qDVDSd2RVF2-EPRPwYk
->>>>>>> a40ac2639d4120eb0fab5a37e68f3382af507dfc

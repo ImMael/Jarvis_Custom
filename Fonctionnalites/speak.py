@@ -8,7 +8,7 @@ def speak(audio):
     """
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[3].id)
+    engine.setProperty('voice', voices[2].id)
     engine.say(audio)
     engine.runAndWait()
 
@@ -19,7 +19,7 @@ def repeat(question):
     :param question: String contenant la phrase donné par l'utilisateur
     """
     repeatable = question.split("répète après moi")
-    speak(repeatable)
+    speak(repeatable[1])
 
 def hello():
     """
