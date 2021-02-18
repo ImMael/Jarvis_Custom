@@ -19,5 +19,13 @@ while True:
 
 
 # NE PAS SUPPRIMER => SERT A TESTER SANS PARLER
+<<<<<<< HEAD
 #repondre()
 #exit()
+=======
+repondre()
+exit()
+
+# API GOOGLE SEARCH
+#  AIzaSyBoi24dsIdsQ_j-qDVDSd2RVF2-EPRPwYk
+>>>>>>> a40ac2639d4120eb0fab5a37e68f3382af507dfc

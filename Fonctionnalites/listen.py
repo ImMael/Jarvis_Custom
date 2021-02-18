@@ -2,6 +2,10 @@ import speech_recognition as sr
 
 
 def ecouter():
+    """
+    Fonction permettant de rester sur écoute constamment
+    :return la demande de l'utilisateur s'il en a fais une
+    """
     ecoute = True
     r = sr.Recognizer()
     print('En écoute')

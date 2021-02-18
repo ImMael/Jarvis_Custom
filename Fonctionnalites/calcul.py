@@ -2,6 +2,10 @@ from Fonctionnalites.speak import speak
 
 
 def calculate(question):
+    """
+    Permet à l'assistant d'effectuer un calcul demandé par l'utilisateur
+    :param question: la demande de l'utilisateur
+    """
     try:
         if "x" in question:
             question = question.replace("x", "*")
@@ -11,7 +15,6 @@ def calculate(question):
                 num = num + question[i]
             else:
                 pass
-            print(num)
 
         result = round(eval(num), 2)
         if str(result).endswith(".0"):
