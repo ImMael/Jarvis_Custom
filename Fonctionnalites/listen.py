@@ -11,7 +11,8 @@ def ecouter():
     print('En écoute')
     while ecoute:
         with sr.Microphone() as source:
-            r.pause_threshold = 0.8
+            r.energy_threshold = 700
+            r.pause_threshold = 0.5
             audio = r.listen(source)
             try:
                 demande = r.recognize_google(audio, language='fr-FR')

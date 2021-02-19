@@ -12,7 +12,8 @@ def addShoppingList(question):
         open(f'memo_output/shoppingList.txt', 'w')
 
     # L'élément à ajouter dans la liste de course
-    toAdd = question.split("ajoute à la liste de course ")[1]
+    toAdd = question.split("ajoute à la liste de courses ")[1]
+    print(toAdd)
 
     with open("memo_output/shoppingList.txt", "r") as f:
         lines = f.readlines()
@@ -21,7 +22,7 @@ def addShoppingList(question):
 
     for line in lines:
         if line.replace("\n", "") in toAdd:
-            speak(f'{toAdd} existe déjà dans votre liste de course')
+            speak(f'{toAdd} existe déjà dans votre liste de courses')
             exist = True
             break
 
@@ -37,7 +38,7 @@ def deleteItemShoppingList(question):
     :param question: la demande de l'utilisateur
     """
     # L'élément à supprimer de la liste de course
-    toDelete = question.split("supprime de la liste de course ")[1]
+    toDelete = question.split("supprime de la liste de courses ")[1]
     found = False
 
     # On vérifie si l'item existe dans la liste de course et on le supprime s'il est trouvé

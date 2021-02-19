@@ -15,7 +15,7 @@ def repondre():
     """
     Permet de répondre à une demande de l'utilisateur parmis pluiseurs variations de demandes possible
     """
-    # question = ecouter()
+    question = ecouter()
 
     # question = "Bonjour"
     # question = "quelle heure est il"
@@ -28,7 +28,7 @@ def repondre():
     # question = "rappelle moi le 15 février 2021 à 15 heures"
     # question = "ajoute à la liste de course des yaourts au chocolat"
     # question = "supprime de la liste de course des yaourts au chocolat"
-    question = "peut-tu vider la liste de course stp"
+    # question = "peut-tu vider la liste de course stp"
     # question = "quel est le temps du trajet de Poissy à Paris"
 
     variations = getVariations()
@@ -51,7 +51,7 @@ def repondre():
                 print(e)
                 pass
     if waitingReponse:
-        # playsound('arouf-gangsta-begaye.wav')
+        playsound('arouf-gangsta-begaye.wav')
         print("CA NE MARCHE PAS")
 
 

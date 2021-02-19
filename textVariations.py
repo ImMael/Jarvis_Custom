@@ -26,9 +26,9 @@ def getVariations():
         'covid': covcases,
         'traduis ': speak_translate,
         'rappelle-moi': memo,
-        'ajoute à la liste de course': addShoppingList,
-        'supprime de la liste de course': deleteItemShoppingList,
-        'vider la liste de course': removeShoppingList,
+        'ajoute à la liste de courses': addShoppingList,
+        'supprime de la liste de courses': deleteItemShoppingList,
+        'vider la liste de courses': removeShoppingList,
         # 'magasins à proximité': getStoreToProximity,
     }
 
