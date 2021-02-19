@@ -22,7 +22,7 @@ def repondre():
     # question = "quel jour sommes nous"
     # question = "répète après moi bonjour tout le monde"
     # question = "quel est la météo à Paris stp"
-    # question = "résultat du calcul 100*5/7"
+    # question = "résultat du calcul 2.5 / 2"
     # question = "quels sont les résultat du covid en france stp"
     # question = "traduis comment allez vous en anglais"
     # question = "rappelle moi le 15 février 2021 à 15 heures"

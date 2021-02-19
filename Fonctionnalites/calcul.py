@@ -9,13 +9,16 @@ def calculate(question):
     try:
         if "x" in question:
             question = question.replace("x", "*")
+        if "," in question:
+            question = question.replace(",", ".")
         num = ""
         for i in range(len(question)):
-            if (question[i].isdigit()) or ("*" == question[i]) or ("/" == question[i]) or ("-" == question[i]) or ("+" == question[i]):
+            if (question[i].isdigit()) or ("*" == question[i]) or ("/" == question[i]) or \
+                    ("-" == question[i]) or ("+" == question[i]) or ("." == question[i]):
                 num = num + question[i]
             else:
                 pass
-
+        print(num)
         result = round(eval(num), 2)
         if str(result).endswith(".0"):
             result = int(result)
