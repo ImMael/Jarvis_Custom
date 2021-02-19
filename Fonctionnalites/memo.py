@@ -5,8 +5,12 @@ import os
 
 save_memo = "memo"
 
-# fonction pour sauvegarder un memo dans u fichier txt
+# fonction pour sauvegarder un memo dans un fichier txt
 def memo(question):
+    """
+    fonction qui enregistre un mémo via une date et une tache
+    :param question: la demande de l'utilisateur
+    """
     if not os.path.exists(f'memo_output/{save_memo}.txt'):
         open(f'memo_output/{save_memo}.txt', 'w')
 
@@ -22,6 +26,11 @@ def memo(question):
 
 # Fonction pour annoncer un mémo si c'est l'heure et puis le supprimer
 def check_memo():
+    """
+    fonction va regarder dans un fichier texte et qui parcour tous les
+    dictionnaires et compare la date du mémo ave la date actuelle pour voir si il doit speak le mémo
+    :return:
+    """
     fr_month = (
         "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre",
         "décembre")
