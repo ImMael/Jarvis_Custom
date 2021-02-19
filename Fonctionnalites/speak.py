@@ -8,7 +8,9 @@ def speak(audio):
     """
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[3].id)
+    selected_voice = voices[38]
+    engine.setProperty('voice', selected_voice.id)
+
     engine.say(audio)
     engine.runAndWait()
 

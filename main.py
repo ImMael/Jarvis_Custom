@@ -11,6 +11,7 @@ while True:
     if appel != None:
         try:
             if "Jarvis" in appel:
+                speak("oui je t'écoute")
                 playsound("soundnotif.wav")
                 repondre()
         except TypeError:
