@@ -31,6 +31,12 @@ def repondre():
     # question = "peut-tu vider la liste de course stp"
     # question = "quel est le temps du trajet de Poissy à Paris"
 
+    # question = "donne moi l'heure s'il te plait"
+    # question = "donne moi la date d'aujourd'hui"
+    # question = "quel temps fait-il aujourd'hui à Paris"
+    # question = "donne moi le résultat de 2.5/2"
+    # question = "créé moi un rappel "
+
     variations = getVariations()
 
     waitingReponse = True

@@ -17,18 +17,36 @@ def getVariations():
     # Liste de toutes les variations possible de demandes utilisateur
     variations = {
         'Bonjour': hello,
+        'Salut': hello,
+        'Coucou': hello,
+
         'quelle heure': whatTimeIsIt,
+        'donne moi l\'heure': whatTimeIsIt,
+
         'quel jour': whatDayToday,
+        'donne moi la date': whatDayToday,
+
         'répète après moi': repeat,
+
         'météo': whatWeather,
+        'quel temps fait-il': whatWeather,
+
         'calcul': calculate,
+        'donne moi le résultat': calculate,
+
         'covit': covcases,
         'covid': covcases,
+
         'traduis ': speak_translate,
+
         'rappelle-moi': memo,
+        'créé moi un rappel': memo, # A vérifier
+
         'ajoute à la liste de courses': addShoppingList,
         'supprime de la liste de courses': deleteItemShoppingList,
         'vider la liste de courses': removeShoppingList,
+        'vide la liste de courses': removeShoppingList,
+
         # 'magasins à proximité': getStoreToProximity,
     }
 
