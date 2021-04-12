@@ -7,6 +7,7 @@ from Fonctionnalites.speak import repeat, hello
 from Fonctionnalites.disease import covcases
 from Fonctionnalites.translate import speak_translate
 from Fonctionnalites.memo import memo
+from Fonctionnalites.gpsTime import getTravelTime
 
 def getVariations():
     """
@@ -45,6 +46,8 @@ def getVariations():
         'supprime de la liste de courses': deleteItemShoppingList,
         'vider la liste de courses': removeShoppingList,
         'vide la liste de courses': removeShoppingList,
+
+        'Combien de temps': getTravelTime,
 
         # 'magasins à proximité': getStoreToProximity,
     }

@@ -15,7 +15,7 @@ def repondre():
     """
     Permet de répondre à une demande de l'utilisateur parmis pluiseurs variations de demandes possible
     """
-    question = ecouter()
+    # question = ecouter()
 
     # question = "Bonjour"
     # question = "quelle heure est il"
@@ -36,6 +36,8 @@ def repondre():
     # question = "donne-moi la date d'aujourd'hui"
     # question = "quel temps fait-il aujourd'hui à Paris"
     # question = "le résultat de 2.5/2"
+
+    question = "Combien de temps pour aller au 1 rue delacroix 91830 Chilly-Mazarin"
 
     variations = getVariations()
 
