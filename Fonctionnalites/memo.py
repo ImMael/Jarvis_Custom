@@ -18,7 +18,7 @@ def memo(question):
 
     tache = date[1].split(" de ")
 
-    f = open(f'memo_output/{save_memo}.txt', "a")
+    f = open(f'memo_output/{save_memo}.txt', encoding="utf_8", mode="a")
     text = {"date": tache[0].replace("1er", "1"),
             "memo": tache[1]}
     f.write(str(text) + "\n")

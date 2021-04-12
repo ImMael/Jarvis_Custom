@@ -40,7 +40,6 @@ def getVariations():
         'traduis ': speak_translate,
 
         'rappelle-moi': memo,
-        'créé moi un rappel': memo, # A vérifier
 
         'ajoute à la liste de courses': addShoppingList,
         'supprime de la liste de courses': deleteItemShoppingList,
