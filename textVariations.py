@@ -21,10 +21,10 @@ def getVariations():
         'Coucou': hello,
 
         'quelle heure': whatTimeIsIt,
-        'donne moi l\'heure': whatTimeIsIt,
+        'donne-moi l\'heure': whatTimeIsIt,
 
         'quel jour': whatDayToday,
-        'donne moi la date': whatDayToday,
+        'donne-moi la date': whatDayToday,
 
         'répète après moi': repeat,
 
@@ -32,7 +32,7 @@ def getVariations():
         'quel temps fait-il': whatWeather,
 
         'calcul': calculate,
-        'donne moi le résultat': calculate,
+        'le résultat': calculate,
 
         'covit': covcases,
         'covid': covcases,
