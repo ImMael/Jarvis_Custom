@@ -49,7 +49,6 @@ def getVariations():
 
         'Combien de temps': getTravelTime,
 
-        # 'magasins à proximité': getStoreToProximity,
     }
 
     return variations
