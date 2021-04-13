@@ -1,6 +1,5 @@
 from Fonctionnalites.calcul import calculate
 from Fonctionnalites.shoppingList import addShoppingList, deleteItemShoppingList, removeShoppingList
-from Fonctionnalites.test import getStoreToProximity
 from Fonctionnalites.time import whatTimeIsIt, whatDayToday
 from Fonctionnalites.whatWeather import whatWeather
 from Fonctionnalites.speak import repeat, hello
@@ -8,6 +7,7 @@ from Fonctionnalites.disease import covcases
 from Fonctionnalites.translate import speak_translate
 from Fonctionnalites.memo import memo
 from Fonctionnalites.gpsTime import getTravelTime
+from Fonctionnalites.findPlacesGps import getNearPlace
 
 def getVariations():
     """
@@ -48,6 +48,7 @@ def getVariations():
         'vide la liste de courses': removeShoppingList,
 
         'Combien de temps': getTravelTime,
+        'le plus proche': getNearPlace,
 
     }
 
