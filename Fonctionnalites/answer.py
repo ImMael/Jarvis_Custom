@@ -37,7 +37,10 @@ def repondre():
     # question = "quel temps fait-il aujourd'hui à Paris"
     # question = "le résultat de 2.5/2"
 
-    question = "Combien de temps pour aller au 1 rue delacroix 91830 Chilly-Mazarin"
+    # question = "Combien de temps en voiture pour aller au 1 rue delacroix 91830 Chilly-Mazarin depuis le 6 rue la fontaine 77230 Juilly"
+    # question = "Combien de temps à pied pour aller au 1 rue delacroix 91830 Chilly-Mazarin depuis le 6 rue la fontaine 77230 Juilly"
+    # question = "Combien de temps à vélo pour aller au 1 rue delacroix 91830 Chilly-Mazarin depuis le 6 rue la fontaine 77230 Juilly"
+    question = "Combien de temps en transport pour aller au 1 rue delacroix 91830 Chilly-Mazarin depuis le 6 rue la fontaine 77230 Juilly"
 
     variations = getVariations()
 
